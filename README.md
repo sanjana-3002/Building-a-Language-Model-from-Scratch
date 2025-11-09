@@ -4,18 +4,18 @@ This project walks through the process of **building a tiny GPT-style model from
 
 ## What This Project Does  
 	
-	- **Data Streaming:** Loads real text data directly from Hugging Face using `datasets`’ streaming API — no downloads needed.  
-	- **Tokenization:** Converts raw text into tokens using a custom or SentencePiece tokenizer.  
-	- **Model Architecture:** Builds a **Transformer-based GPT mini-model** from scratch (multi-head self-attention, MLP, layer normalization).  
-	- **Training Loop:** Trains on small text batches with loss printed at each iteration to show learning progress.  
-	- **Text Generation:** Uses a `generate()` function to produce original text from a user prompt.
+	- Data Streaming: Loads real text data directly from Hugging Face using `datasets`’ streaming API — no downloads needed.  
+	- Tokenization: Converts raw text into tokens using a custom or SentencePiece tokenizer.  
+	- Model Architecture: Builds a **Transformer-based GPT mini-model** from scratch (multi-head self-attention, MLP, layer normalization).  
+	- Training Loop: Trains on small text batches with loss printed at each iteration to show learning progress.  
+	- Text Generation: Uses a `generate()` function to produce original text from a user prompt.
 
 ## Setup  
 
 	You’ll need:  
-	- **Python 3.10+**  
-	- **PyTorch**  
-	- **datasets**, **accelerate**, **sentencepiece**  
+	- Python 3.10+  
+	- PyTorch  
+	- datasets, accelerate, sentencepiece  
 
 	Install dependencies:  
 	```bash
@@ -49,10 +49,10 @@ The research shows that deep models can learn patterns in words and predict new 
 
 ## Next Steps  
 
-	- Replace the simple tokenizer with **BPE or SentencePiece**  
-	- Increase **model size** (layers, heads, or context length)  
-	- Train on **larger datasets** for better results  
-	- Enable **multi-GPU training** with `accelerate`  
+	- Replace the simple tokenizer with BPE or SentencePiece  
+	- Increase model size (layers, heads, or context length)  
+	- Train on larger datasets for better results  
+	- Enable multi-GPU training with `accelerate`  
 
 ## Tech Stack  
 
